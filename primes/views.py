@@ -9,8 +9,8 @@ def home(request):
     if request.method == 'POST':
         num = int(request.POST['upper_limit'])
         prime_list = slieve(num)
-        print(prime_list)
-        return render(request, 'result.html', {'result': prime_list, 'n': num})
+        l = len(prime_list)
+        return render(request, 'result.html', {'result': prime_list, 'n': num, 'l': l})
 
     else: 
         form = InputUpperLimit()
