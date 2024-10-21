@@ -1,0 +1,6 @@
+#borderDemo {
+outline: 3px solid #1C6EA4;
+outline-offset: 0px;
+font-size: 30px;
+min-height: 800px;
+}
