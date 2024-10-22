@@ -1,6 +1,8 @@
-<h1> hiper szuper primszam kereso aplikaciooo </h1>
-<form action="/" method="post">
+<div class="centered">
+  <h1 style="text-align: center; margin-top: 20px; font-size: 60px;">hiper szuper primszam kereso aplikaciooo</h1>
+  <form action="/" method="post">
     {% csrf_token %}
-    {{ form }}
-    <input type="submit" value="Submit">
-</form>
+    {{ form.as_p }}
+    <input type="submit" value="Submit" style="position: absolute; top: 51%; left: 50%; transform: translate(-50%, -50%);">
+  </form>
+</div>
